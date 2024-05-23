@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background: #f7f7f7;
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+    margin-top: 60px;
+}
+/* define como a imagem ficará no site */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.3;
+}
+/* define todos os objetos dentro do menu*/
+/* flex-wrap:wrap faz o menu quebrar no site */
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* define todos os links dentro do menu */
+.menu a {
+    background: #ffffff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: #000000;
+}
+.menu a:hover {
+    box-shadow: 0px 0px 13px #e21;
+    transition: box-shadow 0.1s ease-in;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+}
+
+.introducao {
+    background: #fff;
+    padding: 40px;
+    gap: 20px;
+    text-align: right;
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-items: end;
+}
+
+.botao {
+    background: #e21;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 4px;
+}
+
+.botao:hover {
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    transition: box-shadow 0.1s ease-in;
+    background: rgb(255, 21, 0);
+}
+
+.detalhe {
+    width: 60px;
+    height: 4px;
+    background: #e21;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.subtitulo {
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: end;
+    padding: 40px;
+    align-self: center;
+}
+
+.vantagens {
+    padding: 40px;
+    background: #fff;
+}
+/* aqui define quantas colunas terá o quadrado e qual o tamanho.
+como os icones tem o mesmo tamanho foi usado auto para a primeira coluna
+ficar automatico com o tamanho do icone e a seguda de 1fr para utilizar
+todo o espaço disponivel */
+.vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 20px;
+    padding: 20px;
+}
+/* o p fica automaticamente na primeira coluna, aqui ele foi colocado na segunda */
+.vantagens-item p {
+    grid-column: 2;
+}
+
+.rodape {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
